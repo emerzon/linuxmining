@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Change the following address to your GRIN addr.
 ADDRESS=$(< wallets/grin.address)
