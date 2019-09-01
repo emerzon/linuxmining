@@ -25,7 +25,7 @@ d_start_miner() {
 d_stop_miner() {
   echo "stop_miner"
   screen -S cpu -X quit
-  ./cpu_conceal_xmrig.sh
+  # ./cpu_conceal_xmrig.sh
   mining_status=false
 }
 
