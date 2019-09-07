@@ -9,4 +9,4 @@ PWD=x
 
 ./nvidia_init.sh
 
-screen -mS nvidia ./bin/bminer -fast -nofee -devices 0,1 -uri $SCHEME://$USERNAME:$PWD@$POOL -api 0.0.0.0:1880
+screen -mS nvidia ./bin/bminer -fast -nofee -devices 0 -uri $SCHEME://$USERNAME:$PWD@$POOL -api 0.0.0.0:1880
