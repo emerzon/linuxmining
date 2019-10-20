@@ -17,7 +17,7 @@ bad_block_count=0
 
 d_start_miner() {
   echo "start_miner"
-  screen -S cpu -X quit
+  screen -S cpu2 -X quit
   ./cpu_m7m_cpuminer.sh
   mining_status=true
 }
