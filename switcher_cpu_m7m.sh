@@ -25,7 +25,7 @@ d_start_miner() {
 d_stop_miner() {
   echo "stop_miner"
   screen -S cpu -X quit
-  ./cpu_loki_xmrig.sh
+  ./cpu_cpupower_cpuminer.sh
   mining_status=false
 }
 
