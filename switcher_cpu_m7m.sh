@@ -25,7 +25,7 @@ d_start_miner() {
 d_stop_miner() {
   echo "stop_miner"
   screen -S cpu -X quit
-  ./cpu_cpupower_cpuminer.sh
+  ./cpu_power2b_cpuminer.sh
   mining_status=false
 }
 
