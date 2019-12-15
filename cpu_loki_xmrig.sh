@@ -1,2 +1,3 @@
 #!/bin/bash
-screen -dmS cpu ./bin/xmrig -a rx/loki -o $(< pools/LOKI.pool) -u $(< wallets/LOKI.address) -p x
+sudo modprobe msr
+screen -dmS cpu sudo ./bin/xmrig --randomx-1gb-pages -a rx/loki -o $(< pools/LOKI.pool) -u $(< wallets/LOKI.address) -p x
