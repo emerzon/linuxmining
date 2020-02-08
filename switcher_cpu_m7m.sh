@@ -4,7 +4,7 @@
 # Emerson Gomes (emerson.gomes@gmail.com)
 
 # Config ---------------------------------------------------------------------------------------------------------------
-mining_threshold=5
+mining_threshold=25
 switch_after_good_blocks=1
 switch_after_bad_blocks=5
 check_interval=20
@@ -25,7 +25,7 @@ d_start_miner() {
 d_stop_miner() {
   echo "stop_miner"
   screen -S cpu -X quit
-  ./cpu_power2b_cpuminer.sh
+  ./cpu_monero_xmrig.sh
   mining_status=false
 }
 
