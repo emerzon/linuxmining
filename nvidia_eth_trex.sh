@@ -1,5 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
 ./nvidia_init.sh
+POOL=$(<pools/ETH.pool)
+WALLET=$(<wallets/ETH.wallet)
 screen -S ethpill -dm sudo bin/OhGodAnETHlargementPill-r2
-screen -S nvidia  -dm ./bin/t-rex -a ethash -o stratum+tcp://daggerhashimoto.eu.nicehash.com:3353 -u 32VSBG6C8crzyDYhFiEHQVzteL7MDVNukM.$(hostname)  -p x
+screen -S nvidia  -dm ./bin/t-rex -a ethash -o stratum+tcp://"${POOL}" -u "${WALLET}.$(hostname)" -p x

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #./nvidia_init.sh
 screen -S ethpill -dm sudo bin/OhGodAnETHlargementPill-r2
